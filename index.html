@@ -2,323 +2,75 @@
 <html lang="en">
 
 <head>
-  <!-- meta -->
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>FeralSounds</title>
-  <meta content="" name="keywords">
-  <meta content="" name="description">
-
-  
-  <!-- Bootstrap CSS File -->
-  <link href="index.css" rel="stylesheet">
-
+ <link href="index.css" rel="stylesheet">
 </head>
 
-
 <body>
+<style>
 
-  
-  <!-- start section journal -->
+ .narrative {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('images/p2-2-30.png');
+    background-size: cover;
+    background-position: center;
+  }
 
-  <main className="block col-2">
-      <div className='introduction'> </div><br></br>
-      <h2>The Bedroom </h2>
-      <h4>Sound of crunchy and falling leaves, reading, reeds, wind, snow, mendelssohn, aurora trip, working night and breathing </h4>
-      <br></br>
-      <div class="row">
-        <div class="container">
-          <img class="small" src="images/crunches 1.svg" alt={product.name} onclick="play1()" onclick="myFunction()"/>
-          <audio id="audioPlayer1" src="audio/crunches.mp3"></audio>
-          
-          <script>
-            function play1() {
-              var audio = document.getElementById("audioPlayer1");
-              document.getElementById("audioPlayer1").loop = true;
-              audioPlayer1.volume = 0.2;
-              if (audioPlayer1.paused) {
-            audioPlayer1.play();
-            $('#play').removeClass('glyphicon-play-circle')
-            $('#play').addClass('glyphicon-pause')
-            //myElement.style.opacity = 0.5;
-           }else{
-             audioPlayer1.pause();
-             audioPlayer.currentTime = 0
-            $('#play').addClass('glyphicon-play-circle')
-            $('#play').removeClass('glyphicon-pause')
-            
-           }}
+  .img-container {
+    grid-area: 1 / 1;
+    position: relative;
+  }
 
-          //  const myElement = document.getElementById("img.small");
-          //  if (audioPlayer1.paused){        
-           
+  </style>
+ 
 
-            // const changeBgColor = (ev) => {
-            // ev.currentTarget.style.opacity = 0.5;
-            //  };
-            // const EL_cards = document.querySelectorAll(".samll");
-            // EL_cards.forEach(EL => EL.addEventListener("click", changeBgColor));
-         </script>
-         
-          <h3>123456789</h3>
-          <div>1234</div>
-          <div>56789</div>
-        </div>       
-      
-
-
-       <div class="container">
-        <img class="small" src="images/book 1.svg" alt={product.name} onclick="play2()" />
-        <audio id="audioPlayer2" src="audio/book.mp3"></audio>
-          
-        <script>
-          function play2() {
-            var audio = document.getElementById("audioPlayer2");
-            document.getElementById("audioPlayer2").loop = true;
-            //audioPlayer2.volume = 1;
-            if (audioPlayer2.paused) {
-          audioPlayer2.play();
-          $('#play').removeClass('glyphicon-play-circle')
-          $('#play').addClass('glyphicon-pause')
-         }else{
-          audioPlayer2.pause();
-           //audioPlayer.currentTime = 0
-          $('#play').addClass('glyphicon-play-circle')
-          $('#play').removeClass('glyphicon-pause')
-         }}
-       </script>
-
-        <h3>123456789</h3>
-        <div>1234</div>
-        <div>56789</div>
-       </div>       
-  
-
-    <div class="container">
-      <img class="small" src="images/reeds 1.svg" alt={product.name} onclick="play3()"/>
-      <audio id="audioPlayer3" src="audio/reeds.mp3"></audio>
-      <script>
-        function play3() {
-          var audio = document.getElementById("audioPlayer3");
-          document.getElementById("audioPlayer3").loop = true;
-          audioPlayer3.volume = 0.5;
-          if (audioPlayer3.paused) {
-        audioPlayer3.play();
-        $('#play').removeClass('glyphicon-play-circle')
-        $('#play').addClass('glyphicon-pause')
-       }else{
-        audioPlayer3.pause();
-         //audioPlayer.currentTime = 0
-        $('#play').addClass('glyphicon-play-circle')
-        $('#play').removeClass('glyphicon-pause')
-       }}
-     </script>
-
-      <h3>123456789</h3>
-      <div>1234</div>
-      <div>56789</div>
-    </div>       
-  
-
-  <div class="container">
-    <img class="small" src="images/leaf 1.svg" alt={product.name} onclick="play4()"/>
-    <audio id="audioPlayer4" src="audio/leaves.mp3"></audio>  
-      <script>
-        function play4() {
-          var audio = document.getElementById("audioPlayer4");
-          document.getElementById("audioPlayer4").loop = true;
-          //audioPlayer2.volume = 1;
-          if (audioPlayer4.paused) {
-        audioPlayer4.play();
-        $('#play').removeClass('glyphicon-play-circle')
-        $('#play').addClass('glyphicon-pause')
-       }else{
-        audioPlayer4.pause();
-         //audioPlayer.currentTime = 0
-        $('#play').addClass('glyphicon-play-circle')
-        $('#play').removeClass('glyphicon-pause')
-       }}
-     </script>
-    <h3>123456789</h3>
-    <div>1234</div>
-    <div>56789</div>
-  </div>       
-
-
-<div class="container">
-  <img class="small" src="images/wind 1.svg" alt={product.name} onclick="play5()"/>
-  <audio id="audioPlayer5" src="audio/wind.mp3"></audio>  
-      <script>
-        function play5() {
-          var audio = document.getElementById("audioPlayer5");
-          document.getElementById("audioPlayer5").loop = true;
-          //audioPlayer2.volume = 1;
-          if (audioPlayer5.paused) {
-        audioPlayer5.play();
-        $('#play').removeClass('glyphicon-play-circle')
-        $('#play').addClass('glyphicon-pause')
-       }else{
-        audioPlayer5.pause();
-         //audioPlayer.currentTime = 0
-        $('#play').addClass('glyphicon-play-circle')
-        $('#play').removeClass('glyphicon-pause')
-       }}
-     </script>
-  <h3>123456789</h3>
-  <div>1234</div>
-  <div>56789</div>
-</div>       
-
-<div class="container">
-  <img class="small" src="images/snow 1.svg" alt={product.name} onclick="play6()"/>
-  <audio id="audioPlayer6" src="audio/snow.mp3"></audio>  
-      <script>
-        function play6() {
-          var audio = document.getElementById("audioPlayer6");
-          document.getElementById("audioPlayer6").loop = true;
-          audioPlayer6.volume = 0.18;
-          if (audioPlayer6.paused) {
-        audioPlayer6.play();
-        $('#play').removeClass('glyphicon-play-circle')
-        $('#play').addClass('glyphicon-pause')
-       }else{
-        audioPlayer6.pause();
-         //audioPlayer.currentTime = 0
-        $('#play').addClass('glyphicon-play-circle')
-        $('#play').removeClass('glyphicon-pause')
-       }}
-     </script>
-  <h3>123456789</h3>
-  <div>1234</div>
-  <div>56789</div>
-</div>
-
-<div class="container">
-  <img class="small" src="images/mendelsohn 1.svg" alt={product.name} onclick="play7()"/>
-  <audio id="audioPlayer7" src="audio/mendelsohn.mp3"></audio>  
-      <script>
-        function play7() {
-          var audio = document.getElementById("audioPlayer7");
-          document.getElementById("audioPlayer7").loop = true;
-          audioPlayer7.volume = 0.9;
-          if (audioPlayer7.paused) {
-        audioPlayer7.play();
-        $('#play').removeClass('glyphicon-play-circle')
-        $('#play').addClass('glyphicon-pause')
-       }else{
-        audioPlayer7.pause();
-         //audioPlayer.currentTime = 0
-        $('#play').addClass('glyphicon-play-circle')
-        $('#play').removeClass('glyphicon-pause')
-       }}
-     </script>
-  <h3>123456789</h3>
-  <div>1234</div>
-  <div>56789</div>
-</div>
-
-<div class="container">
-  <img class="small" src="images/aurora 1.svg" alt={product.name} onclick="play8()"/>
-  <audio id="audioPlayer8" src="audio/walking.mp3"></audio>  
-      <script>
-        function play8() {
-          var audio = document.getElementById("audioPlayer8");
-          document.getElementById("audioPlayer8").loop = true;
-          audioPlayer8.volume = 0.3;
-          if (audioPlayer8.paused) {
-        audioPlayer8.play();
-        $('#play').removeClass('glyphicon-play-circle')
-        $('#play').addClass('glyphicon-pause')
-       }else{
-        audioPlayer8.pause();
-         //audioPlayer.currentTime = 0
-        $('#play').addClass('glyphicon-play-circle')
-        $('#play').removeClass('glyphicon-pause')
-       }}
-     </script>
-  <h3>123456789</h3>
-  <div>1234</div>
-  <div>56789</div>
-</div>
-
-<div class="container">
-  <img class="small" src="images/keyboard 1.svg" alt={product.name} onclick="play9()"/>
-  <audio id="audioPlayer9" src="audio/keyboard.mp3"></audio>  
-  <script>
-    function play9() {
-      var audio = document.getElementById("audioPlayer9");
-      document.getElementById("audioPlayer9").loop = true;
-      //audioPlayer2.volume = 1;
-      if (audioPlayer9.paused) {
-    audioPlayer9.play();
-    $('#play').removeClass('glyphicon-play-circle')
-    $('#play').addClass('glyphicon-pause')
-   }else{
-    audioPlayer9.pause();
-     //audioPlayer.currentTime = 0
-    $('#play').addClass('glyphicon-play-circle')
-    $('#play').removeClass('glyphicon-pause')
-   }}
- </script>
-  <h3>123456789</h3>
-  <div>1234</div>
-  <div>56789</div>
-</div>
-
-<div class="container">
-  <img class="small" src="images/Ellipse 1.svg" alt={product.name} onclick="play10()"/>
-  <audio id="audioPlayer10" src="audio/breathe.mp3"></audio>  
-      <script>
-        function play10() {
-          var audio = document.getElementById("audioPlayer10");
-          document.getElementById("audioPlayer10").loop = true;
-          //audioPlayer2.volume = 1;
-          if (audioPlayer10.paused) {
-        audioPlayer10.play();
-        $('#play').removeClass('glyphicon-play-circle')
-        $('#play').addClass('glyphicon-pause')
-       }else{
-        audioPlayer10.pause();
-         //audioPlayer.currentTime = 0
-        $('#play').addClass('glyphicon-play-circle')
-        $('#play').removeClass('glyphicon-pause')
-       }}
-     </script>
-  <h3>123456789</h3>
-  <div>1234</div>
-  <div>56789</div>
-</div>
-
-    </main>
-      
-
+  <div class="narrative">
+    <div class="img-container" data-text="went down for an aurora stroll" data-audio="/audio/walking.mp3"
+    style="position: absolute; top: calc(12vh); right: calc(43vw);" >    
+    <img src="images/p2-31.svg" alt="" class="svgs">
+    </div>
+    <div class="img-container" data-text="reading" data-audio="/audio/book.mp3"
+    style="position: absolute; top: calc(65vh); right: calc(32vw);"> 
+      <img src="images/p2-32.svg" alt="" class="svgs">
+    </div>
+    <div class="img-container" data-text="fallen leaves under snow" data-audio="/audio/leaves.mp3"
+    style="position: absolute; top: calc(40vh); right: calc(30vw);">
+      <img src="images/p2-33.svg" alt="" class="svgs">
+    </div>
+    <div class="img-container" data-text="bed" data-audio="/audio/breathe.mp3"
+    style="position: absolute; top: calc(87vh); right: calc(40vw);">
+      <img src="images/p2-34.svg" alt="" class="svgs">
+    </div>
+    <div class="img-container" data-text="typing on keyboard" data-audio="/audio/keyboard.mp3"
+    style="position: absolute; top: calc(67vh); right: calc(56vw);">
+      <img src="images/p2-35.svg" alt="" class="svgs">
+    </div>
+    <div class="img-container" data-text="fallen leaves" data-audio="/audio/crunches.mp3"
+    style="position: absolute; top: calc(62vh); right: calc(80vw);">
+      <img src="images/p2-36.svg" alt="" class="svgs">
+    </div>
+    <div class="img-container" data-text="Symphony of Mendelssohn" data-audio="/audio/mendelsohn.mp3"
+    style="position: absolute; top: calc(81vh); right: calc(63vw);">
+      <img src="images/p2-37.svg" alt="" class="svgs">
+    </div>
+    <div class="img-container" data-text="reeds in frozen lake" data-audio="/audio/reeds.mp3"
+    style="position: absolute; top: calc(27vh); right: calc(61vw);">
+      <img src="images/p2-38.svg" alt="" class="svgs">
+    </div>
+    <div class="img-container" data-text="snow" data-audio="/audio/snow.mp3"
+    style="position: absolute; top: calc(74vh); right: calc(6vw);">
+      <img src="images/p2-39.svg" alt="" class="svgs">
+    </div>
+    <div class="img-container" data-text="view from balcony" data-audio="/audio/wind.mp3"
+    style="position: absolute; top: calc(46vh); right: calc(45w);">
+      <img src="images/p2-40.svg" alt="" class="svgs">
     </div>
   </div>
-  <!-- End section footer -->
-<script>
-  //  function myFunction() {
-  //   const changeColor = (ev) => {
-  //   ev.currentTarget.style.backgroundcolor = "0.5";
-  // };
-  // const EL_cards = document.querySelectorAll("img.small");
-  // EL_cards.forEach(EL => EL.addEventListener("click", changeColor));
-     
-  //  const myElement = document.getElementById("img.small");
-  //  let isOpaque = true;
-  //  if (isOpaque) {
-  //  myElement.style.opacity = 0.5;
-  //  } else {
-  //  myElement.style.opacity = 1;
-  //  isOpaque = !isOpaque;
-  //  }
-  
-  // }
-   
-</script>
 
-  <!-- JavaScript Libraries -->
-  <script src="interact.js"></script>
+<script src="/js/main.js"></script>
  
 </body>
 
